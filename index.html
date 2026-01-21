@@ -2,130 +2,74 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abduaziz Abdumanonov — Portfolio</title>
+    <title>IT TAT</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<a href="https://peppy-selkie-d778c8.netlify.app/"> netlify link</a>
+
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">Abduaziz<span>.</span></div>
+<!-- ===== HEADER ===== -->
+<header class="header">
+    <div class="logo">
+        <img src="photo_2026-01-21_17-20-59.jpg" alt="IT TAT">
+    </div>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">☰</label>
-
-    <nav>
-        <a href="#hero">Asosiy</a>
-        <a href="#about">Men haqimda</a>
-        <a href="#info">Ma'lumotlarim</a>
-        <a href="#skills">Ko‘nikmalar</a>
-        <a href="#contact">Aloqa</a>
+    <nav class="nav">
+        <a href="#">Bosh sahifa</a>
+        <a href="#">Kurslar</a>
+        <a href="#">Ustozlar</a>
+        <a href="#">Online kurslar</a>
     </nav>
+
+    <div class="header-right">
+        <span class="phone">📞 +998 (88) 611-04-40</span>
+        <button class="register-btn">RO‘YXATDAN O‘TISH</button>
+    </div>
 </header>
 
-<!-- HERO -->
-<section id="hero" class="hero reveal">
-    <div class="hero-content">
-        <h1 class="glitch">Abduaziz <span>Abdumanonov</span></h1>
-        <p class="typewriter">Frontend Developer • Web Creator • Digital Artist</p>
-        <a href="#contact" class="btn">Bog‘lanish</a>
-    </div>
-    <div class="hero-img">
-        <img src="rasmi1.jpg" alt="Abduaziz">
-    </div>
-</section>
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <h1 class="hero-title">
+        Innovatsiya va texnologiya olamida buyuklardan biri <br>
+        bo‘lishga IT TAT sizga ko‘makdosh
+    </h1>
 
-<!-- ABOUT -->
-<section id="about" class="about reveal">
-    <h2 class="section-title">Men haqimda</h2>
-    <div class="about-box">
-        <div class="about-text">
+    <div class="hero-wrapper">
+        <!-- IMAGE -->
+        <div class="hero-image">
+            <img src="photo_2026-01-21_16-41-17.jpg" alt="Hero image">
+        </div>
+
+        <!-- COURSES -->
+        <div class="hero-tags">
+            <span>Backend</span>
+            <span>Frontend</span>
+            <span>Kompyuter Savodxonligi</span>
+            <span>Grafik Gizayn</span>
+            <span>SMM</span>
+            <span>Foundation</span>
+            <span>Robototexnika</span>
+        </div>
+
+        <!-- INFO -->
+        <div class="hero-info">
             <p>
-                Salom! Men — <span class="highlight">Abduaziz Abdumanonov</span>, 18 yoshdaman.
-                Zamonaviy <span class="highlight">Frontend Development</span> bilan shug‘ullanaman.
+                IT TAT – O‘z qadriyatlariga ega va eng kuchli
+                mutaxassislar jamlangan zamonaviy kasblar
+                o‘quv markazi.
             </p>
-            <p>
-                Web-dizayn, animatsiyalar va interaktiv sahifalar yaratish mening asosiy yo‘nalishim.
-            </p>
-            <ul>
-                <li>UI / UX dizayn</li>
-                <li>Interaktiv web sahifalar</li>
-                <li>Cyber / Neon dizayn</li>
-                <li>React va zamonaviy texnologiyalar</li>
-            </ul>
-            <p>
-                Maqsadim — professional web developer bo‘lish va kuchli loyihalar yaratish.
-            </p>
+
+            <button class="consult-btn">
+                Bepul konsultatsiya olish
+            </button>
         </div>
     </div>
 </section>
 
-<!-- INFO -->
-<section id="info" class="info reveal">
-    <h2 class="section-title">Mening Ma'lumotlarim</h2>
-    <div class="info-grid">
-        <div class="info-card">
-            <h3>Shaxsiy</h3>
-            <p>Ism: <b>Abduaziz</b></p>
-            <p>Yosh: <b>18</b></p>
-            <p>Yo‘nalish: <b>Frontend</b></p>
-        </div>
-        <div class="info-card">
-            <h3>Aloqa</h3>
-            <p>Email: <b>abduazizabdumanonov49@gmail.com</b></p>
-            <p>Tel: <b>+998 93 725 16 84</b></p>
-        </div>
-        <div class="info-card">
-            <h3>Qiziqishlar</h3>
-            <p>UI/UX</p>
-            <p>Cyber Design</p>
-            <p>Web animatsiya</p>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills reveal">
-    <h2 class="section-title">Ko‘nikmalar</h2>
-    <div class="skill-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">React</div>
-        <div class="skill-card">Figma</div>
-        <div class="skill-card">Bootstrap</div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact reveal">
-    <h2 class="section-title">Aloqa</h2>
-    <p>Email: abduazizabdumanonov49@gmail.com</p>
-    <p>Telefon: +998 93 725 16 84</p>
-    <div class="social-links">
-        <a href="https://t.me/abdumanonov_abduaziz" target="_blank">Telegram</a>
-        <a href="https://instagram.com/abduaziz_475" target="_blank">Instagram</a>
-    </div>
-</section>
-
-<footer>
-    © 2025 Abduaziz Abdumanonov
-</footer>
-
-<script>
-window.addEventListener('scroll', () => {
-    document.querySelectorAll('.reveal').forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-            el.classList.add('active');
-        }
-    });
-});
-</script>
+<h2 class="section-title">Nimaga bizni tanlashadi</h2>
 
 </body>
 </html>
-
-
-
-
