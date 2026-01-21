@@ -1,18 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abduaziz Abdumanonov — Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, enim!</p>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Abduaziz<span>.</span></div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+        <a href="#hero">Asosiy</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#info">Ma'lumotlarim</a>
+        <a href="#skills">Ko‘nikmalar</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero reveal">
+    <div class="hero-content">
+        <h1 class="glitch">Abduaziz <span>Abdumanonov</span></h1>
+        <p class="typewriter">Frontend Developer • Web Creator • Digital Artist</p>
+        <a href="#contact" class="btn">Bog‘lanish</a>
+    </div>
+    <div class="hero-img">
+        <img src="rasmi1.jpg" alt="Abduaziz">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about reveal">
+    <h2 class="section-title">Men haqimda</h2>
+    <div class="about-box">
+        <div class="about-text">
+            <p>
+                Salom! Men — <span class="highlight">Abduaziz Abdumanonov</span>, 18 yoshdaman.
+                Zamonaviy <span class="highlight">Frontend Development</span> bilan shug‘ullanaman.
+            </p>
+            <p>
+                Web-dizayn, animatsiyalar va interaktiv sahifalar yaratish mening asosiy yo‘nalishim.
+            </p>
+            <ul>
+                <li>UI / UX dizayn</li>
+                <li>Interaktiv web sahifalar</li>
+                <li>Cyber / Neon dizayn</li>
+                <li>React va zamonaviy texnologiyalar</li>
+            </ul>
+            <p>
+                Maqsadim — professional web developer bo‘lish va kuchli loyihalar yaratish.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- INFO -->
+<section id="info" class="info reveal">
+    <h2 class="section-title">Mening Ma'lumotlarim</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Shaxsiy</h3>
+            <p>Ism: <b>Abduaziz</b></p>
+            <p>Yosh: <b>18</b></p>
+            <p>Yo‘nalish: <b>Frontend</b></p>
+        </div>
+        <div class="info-card">
+            <h3>Aloqa</h3>
+            <p>Email: <b>abduazizabdumanonov49@gmail.com</b></p>
+            <p>Tel: <b>+998 93 725 16 84</b></p>
+        </div>
+        <div class="info-card">
+            <h3>Qiziqishlar</h3>
+            <p>UI/UX</p>
+            <p>Cyber Design</p>
+            <p>Web animatsiya</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills reveal">
+    <h2 class="section-title">Ko‘nikmalar</h2>
+    <div class="skill-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Figma</div>
+        <div class="skill-card">Bootstrap</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+    <h2 class="section-title">Aloqa</h2>
+    <p>Email: abduazizabdumanonov49@gmail.com</p>
+    <p>Telefon: +998 93 725 16 84</p>
+    <div class="social-links">
+        <a href="https://t.me/abdumanonov_abduaziz" target="_blank">Telegram</a>
+        <a href="https://instagram.com/abduaziz_475" target="_blank">Instagram</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 Abduaziz Abdumanonov
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.reveal').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+            el.classList.add('active');
+        }
+    });
+});
+</script>
 
 </body>
-
 </html>
+
+
+
+
